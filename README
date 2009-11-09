@@ -1,0 +1,2 @@
+exemplor_chaser MyMath --verbose --test partial_examples.rb
+exemplor_chaser MyMath --verbose --test full_examples.rb
