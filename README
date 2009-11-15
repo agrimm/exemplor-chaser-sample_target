@@ -1,2 +1,11 @@
-exemplor_chaser MyMath --verbose --test partial_examples.rb
-exemplor_chaser MyMath --verbose --test full_examples.rb
+== Description:
+
+This is sample code to practice exemplor-chaser on.
+
+Once you've installed exemplor-chaser, the first command below should indicate that
+the code isn't fully described (MyMath#times can be mutated and the example doesn't fail),
+while the second command should indicate that the code is fully described (all mutations
+cause at least one example to fail).
+
+exemplor-chaser MyMath --verbose --test partial_examples.rb
+exemplor-chaser MyMath --verbose --test full_examples.rb
