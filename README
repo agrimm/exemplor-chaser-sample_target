@@ -1,6 +1,6 @@
-== Description:
+This is sample code to practice mutation testing code on
 
-This is sample code to practice exemplor-chaser on.
+== Description for running exemplor-chaser:
 
 Once you've installed exemplor-chaser, the first command below should indicate that
 the code isn't fully described (MyMath#times can be mutated and the example doesn't fail),
@@ -9,3 +9,14 @@ cause at least one example to fail).
 
 exemplor-chaser MyMath --verbose --test partial_examples.rb
 exemplor-chaser MyMath --verbose --test full_examples.rb
+
+== Description for running zombie-chaser:
+
+There are three test/unit scenarios to be run. One contains a broken test, which'll
+kill the human. The second one has passing tests, but doesn't fully the code being
+tested, so not all of the zombies will be killed. The third one fully tests the code,
+meaning that all of the zombies will be killed.
+
+ruby -d -I..\exemplor-chaser-sample_target bin\zombie-chaser MyMath --tests ../exemplor-chaser-sample_target/broken_test_unit.rb
+ruby -d -I..\exemplor-chaser-sample_target bin\zombie-chaser MyMath --tests ../exemplor-chaser-sample_target/partial_test_unit.rb
+ruby -d -I..\exemplor-chaser-sample_target bin\zombie-chaser MyMath --tests ../exemplor-chaser-sample_target/full_test_unit.rb
