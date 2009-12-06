@@ -17,6 +17,6 @@ kill the human. The second one has passing tests, but doesn't fully the code bei
 tested, so not all of the zombies will be killed. The third one fully tests the code,
 meaning that all of the zombies will be killed.
 
-ruby -d -I..\exemplor-chaser-sample_target bin\zombie-chaser MyMath --tests ../exemplor-chaser-sample_target/broken_test_unit.rb
-ruby -d -I..\exemplor-chaser-sample_target bin\zombie-chaser MyMath --tests ../exemplor-chaser-sample_target/partial_test_unit.rb
-ruby -d -I..\exemplor-chaser-sample_target bin\zombie-chaser MyMath --tests ../exemplor-chaser-sample_target/full_test_unit.rb
+ruby -d -I../exemplor-chaser-sample_target bin/zombie-chaser MyMath --tests ../exemplor-chaser-sample_target/broken_test_unit.rb
+ruby -d -I../exemplor-chaser-sample_target bin/zombie-chaser MyMath --tests ../exemplor-chaser-sample_target/partial_test_unit.rb
+ruby -d -I../exemplor-chaser-sample_target bin/zombie-chaser MyMath --tests ../exemplor-chaser-sample_target/full_test_unit.rb
